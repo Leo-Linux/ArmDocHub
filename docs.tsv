@@ -1,0 +1,134 @@
+# ARM 官方文档归档清单(为《系统虚拟化技术深度解析》服务)
+#
+# 字段:
+#   category    物理归档子类(如 01-arm-architecture/1.1-arm-arm)
+#   id          短标识符(用于文件名、视图引用)
+#   doc_id      ARM 官方文档编号(DDI/IHI/DEN/AES/DAI/无)
+#   title       中英混合的描述性标题
+#   url         下载或详情页 URL
+#   type        pdf=直链 PDF; html=详情页(需手动下 PDF)
+#   views       逗号分隔,标注属于哪些视图
+#               overview        = 系统虚拟化总览
+#               app-lifecycle   = 应用:VM 生命周期
+#               app-hyp-impl    = 应用:Hypervisor 实现
+#               A=架构基础  B=CPU 虚拟化  C=内存虚拟化  D=中断虚拟化
+#               E=I/O 虚拟化  F=资源 QoS  G=ARM 机密计算
+#   role        在视图中的角色(可选,逗号分隔):核心/相关/背景/备查
+#   note        简短说明(可选)
+#
+# 行格式: tab 分隔
+# 注释行以 # 开头会被脚本忽略
+
+#category	id	doc_id	title	url	type	views	role	note
+
+# ============================================================
+# 一、ARM 架构(10 份)
+# ============================================================
+
+# 1.1 Architecture Reference Manual
+01-arm-architecture/1.1-arm-arm	ddi0487-detail	DDI 0487	Arm ARM for A-profile architecture	https://developer.arm.com/documentation/ddi0487/latest/	html	overview,A,B,C,D,E,F,G,app-lifecycle,app-hyp-impl	核心	唯一权威规范;视图 H 第 1 层
+01-arm-architecture/1.1-arm-arm	ddi0487-Ha-pdf	DDI 0487 H.a	Arm ARM A-profile Issue H.a (PDF mirror, 2022)	https://documentation-service.arm.com/static/62f4d062e95b0a633aff7ad7	pdf	overview	核心	DDI 0487 的可下载 PDF 镜像
+01-arm-architecture/1.1-arm-arm	ddi0587-ras	DDI 0587	RAS System Architecture Specification	https://developer.arm.com/documentation/ddi0587/latest/	html	A	备查	备查;不入主链路
+
+# 1.2 Programmer's Guide
+01-arm-architecture/1.2-programmers-guide	den0024a-pg	DEN 0024A	Cortex-A Series Programmer's Guide for ARMv8-A	https://developer.arm.com/documentation/den0024/a/	html	overview,A,B	背景	ARMv8 编程模型入门
+
+# 1.3 异常模型
+01-arm-architecture/1.3-exception-model	102412-exception	102412	AArch64 Exception Model	https://developer.arm.com/documentation/102412/latest/	html	overview,A,B,D,app-lifecycle,app-hyp-impl	核心	陷入路径、vIRQ/vFIQ/vSError 注入
+
+# 1.4 系统级架构
+01-arm-architecture/1.4-system-architecture	den0029-sbsa	DEN 0029	Server Base System Architecture (SBSA)	https://developer.arm.com/documentation/den0029/latest/	html	overview,E,F,G,app-lifecycle	相关	服务器虚拟化强制要求
+01-arm-architecture/1.4-system-architecture	den0094-bsa	DEN 0094	Base System Architecture (BSA)	https://developer.arm.com/documentation/den0094/latest/	html	overview,app-lifecycle	相关	通用平台基线
+01-arm-architecture/1.4-system-architecture	den0044-bbr	DEN 0044	Arm Base Boot Requirements (BBR)	https://developer.arm.com/documentation/den0044/latest/	html	overview,app-lifecycle	相关	VM firmware 接口
+01-arm-architecture/1.4-system-architecture	ebbr	EBBR	Embedded Base Boot Requirements	https://arm-software.github.io/ebbr/	html	overview	相关	嵌入式启动规范
+
+# 1.5 启动与固件接口
+01-arm-architecture/1.5-firmware-interfaces	den0022-psci	DEN 0022	Power State Coordination Interface (PSCI)	https://developer.arm.com/documentation/den0022/latest/	html	overview,B,app-lifecycle,app-hyp-impl	核心	VM CPU 启停/挂起/关机
+01-arm-architecture/1.5-firmware-interfaces	den0028-smccc	DEN 0028	SMC Calling Convention (SMCCC)	https://developer.arm.com/documentation/den0028/latest/	html	overview,B,G,app-lifecycle,app-hyp-impl	核心	SMC/HVC 调用约定
+
+# ============================================================
+# 二、内存(17 份)
+# ============================================================
+
+# 2.1 内存模型(PE 数据访问语义)
+02-memory/2.1-memory-model	102376-v1-model	102376 v1.0	AArch64 memory model v1.0 (PDF)	https://documentation-service.arm.com/static/6298a839b334256d9ea8af70	pdf	overview,C	相关	v1.0 综合篇
+02-memory/2.1-memory-model	102376-v2-attrs	102376 v2.0	AArch64 memory attributes and properties v2.0 (PDF)	https://documentation-service.arm.com/static/63a43e333f28e5456434e18b	pdf	overview,C	相关	v2.0 属性专篇
+02-memory/2.1-memory-model	102336-ordering	102336	AArch64 memory ordering model	https://developer.arm.com/documentation/102336/latest/	html	overview,C	相关	barriers 在虚拟化上下文
+02-memory/2.1-memory-model	100941-systems	100941	Armv8-A memory systems	https://developer.arm.com/documentation/100941/latest/	html	overview,C	背景	cache/order 综合(老版)
+
+# 2.2 MMU(PE 地址翻译)
+02-memory/2.2-mmu	101811-mmu-detail	101811	AArch64 memory management(MMU)	https://developer.arm.com/documentation/101811/latest/	html	overview,C,G,app-lifecycle,app-hyp-impl	核心	Stage 1/2、TLB、ASID
+02-memory/2.2-mmu	101811-v14-pdf	101811 v1.4	AArch64 memory management v1.4 (PDF)	https://documentation-service.arm.com/static/670e4dc89fbc7343d3e4cee1	pdf	overview,C	核心	101811 PDF 直链
+02-memory/2.2-mmu	102416-mmu-examples	102416	AArch64 memory management examples	https://developer.arm.com/documentation/102416/latest/	html	overview,C,app-hyp-impl	核心	汇编示例
+
+# 2.3 SMMU(IOMMU)
+02-memory/2.3-smmu	ihi0070-smmuv3	IHI 0070	Arm SMMUv3 Architecture Spec	https://developer.arm.com/documentation/ihi0070/latest/	html	overview,C,E,G,app-lifecycle,app-hyp-impl	核心	SMMUv3 权威规范
+02-memory/2.3-smmu	ihi0062-smmuv2	IHI 0062	Arm SMMUv2 Architecture Spec	https://developer.arm.com/documentation/ihi0062/latest/	html	E	相关	对比 SMMUv3
+02-memory/2.3-smmu	109242-smmu-intro	109242	Learn the architecture: SMMUv3 introduction	https://developer.arm.com/documentation/109242/latest/	html	overview,E	背景	SMMUv3 教程
+02-memory/2.3-smmu	109899-smmu-sw	109899	SMMUv3 software guide	https://developer.arm.com/documentation/109899/latest/	html	overview,C,E,app-hyp-impl	核心	SMMU 配置实务
+02-memory/2.3-smmu	101542-mmu700	101542	CoreLink MMU-700 TRM	https://developer.arm.com/documentation/101542/latest/	html	overview,E	相关	SMMU IP 实现
+
+# 2.4 MPAM
+02-memory/2.4-mpam	ddi0598-mpam	DDI 0598	Arm ARM Supplement: MPAM for A-profile	https://developer.arm.com/documentation/ddi0598/latest/	html	overview,F	核心	MPAM 架构规范
+02-memory/2.4-mpam	ihi0099-mpam-msc	IHI 0099	MPAM System Component Specification (PDF)	https://documentation-service.arm.com/static/662679ed2f51dc4fe7260043	pdf	overview,F	核心	MPAM 系统组件规范
+02-memory/2.4-mpam	107692-mpam-mem	107692	Memory System / MPAM intro (PDF)	https://documentation-service.arm.com/static/63fc88d656ea36189d4e77df	pdf	overview,F	相关	MPAM 入门
+02-memory/2.4-mpam	107768-mpam-intro	107768	Introduction to MPAM	https://developer.arm.com/documentation/107768/latest/	html	overview,F	核心	MPAM 概念介绍
+02-memory/2.4-mpam	109945-mpam-fw	109945	MPAM firmware and software guide	https://developer.arm.com/documentation/109945/latest/	html	overview,F	核心	MPAM 软件实现
+02-memory/2.4-mpam	109943-mpam-sys	109943	MPAM system design and management	https://developer.arm.com/documentation/109943/latest/	html	overview,F	相关	MPAM 系统设计
+
+# ============================================================
+# 三、中断(10 份)
+# ============================================================
+
+# 3.1 GIC 架构规范
+03-interrupt/3.1-gic-architecture	ihi0069-gicv3v4	IHI 0069	Arm GIC Architecture Spec, GICv3+GICv4	https://developer.arm.com/documentation/ihi0069/latest/	html	overview,D,G,app-hyp-impl	核心	GIC 权威规范
+03-interrupt/3.1-gic-architecture	aes0070-gicv5	AES 0070	Arm GICv5 Architecture Spec (2025 beta)	https://developer.arm.com/documentation/aes0070/latest/	html	overview,D,G	相关	GICv5 零陷入虚拟化
+03-interrupt/3.1-gic-architecture	aes0070-pdf	AES 0070 beta0	Arm GICv5 Architecture Spec beta0 (PDF)	https://documentation-service.arm.com/static/67ea9f604191d739c8e9f9bb	pdf	overview	相关	GICv5 PDF 直链
+
+# 3.2 GIC 教程与软件指南
+03-interrupt/3.2-gic-guides	198123-gicv3v4-overview	198123	GICv3/v4 Overview	https://developer.arm.com/documentation/198123/latest/	html	overview,D	背景	物理中断教程
+03-interrupt/3.2-gic-guides	198123-pdf	198123 v3.0	GICv3/v4 Overview v3.0 (PDF)	https://documentation-service.arm.com/static/68077c770887e84c5ae973da	pdf	overview	背景	198123 PDF 直链
+03-interrupt/3.2-gic-guides	198134-gicv3v4-virt	198134	GICv3/v4 Virtualization	https://developer.arm.com/documentation/198134/latest/	html	overview,D,app-lifecycle,app-hyp-impl	核心	中断虚拟化主参考
+03-interrupt/3.2-gic-guides	198134-pdf	198134 v2022	GICv3/v4 Virtualization 2022 (PDF)	https://documentation-service.arm.com/static/65b7c197c2052a35156cc31a	pdf	overview	核心	198134 PDF 直链
+03-interrupt/3.2-gic-guides	109344-lpi-its	109344	LPIs and the ITS	https://developer.arm.com/documentation/109344/latest/	html	overview,D,E,G,app-hyp-impl	核心	vLPI/vSGI 直接注入
+03-interrupt/3.2-gic-guides	110491-gicv5-intro	110491	GICv5 introduction	https://developer.arm.com/documentation/110491/latest/	html	overview,D	相关	GICv5 入门
+03-interrupt/3.2-gic-guides	dai0492-sw	DAI 0492	GICv3 and GICv4 Software Overview	https://developer.arm.com/documentation/dai0492/latest/	html	overview,D,app-hyp-impl	相关	软件实现参考
+03-interrupt/3.2-gic-guides	dai0492-pdf	DAI 0492 B	GIC Software Overview B (PDF mirror)	https://documentation-service.arm.com/static/5f1068720daa596235e7f6ef	pdf	overview	相关	DAI 0492 PDF 镜像
+
+# 3.3 Generic Timer
+03-interrupt/3.3-generic-timer	102379-timer	102379	Arm Generic Timer	https://developer.arm.com/documentation/102379/latest/	html	overview,D,app-hyp-impl	相关	timer 中断虚拟化
+
+# 3.4 GIC IP TRM
+03-interrupt/3.4-gic-ip-trm	101206-gic600ae	101206	GIC-600AE TRM (功能安全版)	https://developer.arm.com/documentation/101206/latest/	html	(无)	相关	车规/Cyber-physical
+03-interrupt/3.4-gic-ip-trm	101516-gic700	101516	GIC-700 TRM	https://developer.arm.com/documentation/101516/latest/	html	overview	相关	Neoverse 配套 GIC IP
+
+# ============================================================
+# 四、安全(5 份)
+# ============================================================
+
+# 4.1 CCA / Realm
+04-security/4.1-cca-realm	den0129-rme	DEN 0129	Realm Management Extension System Architecture	https://developer.arm.com/documentation/den0129/latest/	html	overview,G,app-lifecycle	核心	CCA 系统架构
+04-security/4.1-cca-realm	ddi0615-rme	DDI 0615	RME Architecture supplement (GPT)	https://developer.arm.com/documentation/ddi0615/latest/	html	overview,G	核心	RME 架构补充、GPT
+04-security/4.1-cca-realm	den0137-rmm	DEN 0137	Realm Management Monitor (RMM) Specification	https://developer.arm.com/documentation/den0137/latest/	html	overview,G,app-lifecycle,app-hyp-impl	核心	RMI/RSI 接口
+04-security/4.1-cca-realm	102842-cca-sw	102842	Arm CCA Software Stack guide	https://developer.arm.com/documentation/102842/latest/	html	overview,G,app-hyp-impl	核心	CCA 软件栈
+
+# 4.2 TrustZone
+04-security/4.2-trustzone	100935-trustzone	100935	TrustZone for AArch64	https://developer.arm.com/documentation/100935/latest/	html	overview,G	相关	对比 Realm 与 Secure
+
+# ============================================================
+# 五、服务器(3 份)
+# ============================================================
+
+# 5.1 Neoverse CPU TRM
+05-server/5.1-neoverse-trm	102099-n2	102099	Neoverse N2 TRM	https://developer.arm.com/documentation/102099/latest/	html	overview,F	相关	服务器场景实现
+05-server/5.1-neoverse-trm	102375-v2	102375	Neoverse V2 TRM	https://developer.arm.com/documentation/102375/latest/	html	overview,F	相关	服务器场景实现
+
+# 5.2 互连 IP TRM
+05-server/5.2-interconnect-trm	102308-cmn700	102308	CoreLink CMN-700 TRM	https://developer.arm.com/documentation/102308/latest/	html	overview,F	相关	一致性互连
+
+# ============================================================
+# 六、虚拟化(1 份)
+# ============================================================
+
+# 6.1 系统虚拟化总论
+06-virtualization/6.1-system-virtualization	102142-virt	102142	AArch64 virtualization	https://developer.arm.com/documentation/102142/latest/	html	overview,B,C,D,app-lifecycle,app-hyp-impl	核心	虚拟化主入口文档
