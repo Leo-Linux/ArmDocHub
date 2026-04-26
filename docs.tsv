@@ -53,11 +53,10 @@
 02-memory/2.1-memory-model	102376-v1-model	102376 v1.0	AArch64 memory model v1.0 (PDF)	https://documentation-service.arm.com/static/6298a839b334256d9ea8af70	pdf	overview,C	相关	v1.0 综合篇
 02-memory/2.1-memory-model	102376-v2-attrs	102376 v2.0	AArch64 memory attributes and properties v2.0 (PDF)	https://documentation-service.arm.com/static/63a43e333f28e5456434e18b	pdf	overview,C	相关	v2.0 属性专篇
 02-memory/2.1-memory-model	102336-ordering	102336	AArch64 memory ordering model	https://developer.arm.com/documentation/102336/latest/	html	overview,C	相关	barriers 在虚拟化上下文
-02-memory/2.1-memory-model	100941-systems	100941	Armv8-A memory systems	https://developer.arm.com/documentation/100941/latest/	html	overview,C	背景	cache/order 综合(老版)
+02-memory/2.1-memory-model	100941-systems	100941	Learn the architecture - ARMv8-A memory systems v1.1 (PDF mirror, 2022)	https://documentation-service.arm.com/static/62d6777531ea212bb6627683	pdf	overview,C	背景	cache/order 综合(老版)
 
 # 2.2 MMU(PE 地址翻译)
-02-memory/2.2-mmu	101811-mmu-detail	101811	AArch64 memory management(MMU)	https://developer.arm.com/documentation/101811/latest/	html	overview,C,G,app-lifecycle,app-hyp-impl	核心	Stage 1/2、TLB、ASID
-02-memory/2.2-mmu	101811-v14-pdf	101811 v1.4	AArch64 memory management v1.4 (PDF)	https://documentation-service.arm.com/static/670e4dc89fbc7343d3e4cee1	pdf	overview,C	核心	101811 PDF 直链
+02-memory/2.2-mmu	101811-mmu-detail	101811	Learn the architecture - AArch64 memory management Guide v1.4 (PDF mirror, 2025)	https://documentation-service.arm.com/static/68e680a2587fd957f5efd742	pdf	overview,C,G,app-lifecycle,app-hyp-impl	核心	Stage 1/2、TLB、ASID
 02-memory/2.2-mmu	102416-mmu-examples	102416	AArch64 memory management examples	https://developer.arm.com/documentation/102416/latest/	html	overview,C,app-hyp-impl	核心	汇编示例
 
 # 2.3 SMMU(IOMMU)
