@@ -1,4 +1,4 @@
-# ARM 官方文档归档清单(为《系统虚拟化技术深度解析》服务)
+# ARM 官方文档归档清单(为《系统虚拟化原理与实现》服务)
 #
 # 字段:
 #   category    物理归档子类(如 01-arm-architecture/1.1-arm-arm)
@@ -27,7 +27,7 @@
 
 # 1.1 Architecture Reference Manual
 01-arm-architecture/1.1-arm-arm	ddi0487-detail	DDI 0487	Arm ARM for A-profile architecture	https://developer.arm.com/documentation/ddi0487/latest/	html	overview,A,B,C,D,E,F,G,app-lifecycle,app-hyp-impl	核心	唯一权威规范;视图 H 第 1 层
-01-arm-architecture/1.1-arm-arm	ddi0487-Ha-pdf	DDI 0487 H.a	Arm ARM A-profile Issue H.a (PDF mirror, 2022)	https://documentation-service.arm.com/static/62f4d062e95b0a633aff7ad7	pdf	overview	核心	DDI 0487 的可下载 PDF 镜像
+01-arm-architecture/1.1-arm-arm	ddi0487-Mb-pdf	DDI 0487 M.b	Arm ARM A-profile Issue M.b (PDF mirror)	https://documentation-service.arm.com/static/69d7cbfc3fb3b839f93e5b1e	pdf	overview	核心	DDI 0487 的可下载 PDF 镜像
 01-arm-architecture/1.1-arm-arm	ddi0587-ras	DDI 0587	RAS System Architecture Specification	https://developer.arm.com/documentation/ddi0587/latest/	html	A	备查	备查;不入主链路
 
 # 1.2 Programmer's Guide
