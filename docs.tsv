@@ -62,8 +62,7 @@
 # 2.3 SMMU(IOMMU)
 02-memory/2.3-smmu	ihi0070-smmuv3	IHI 0070 H.a	Arm SMMUv3 Architecture Specification (PDF mirror, 2026)	https://documentation-service.arm.com/static/69ae9767e79f9a1d642aab2d	pdf	overview,C,E,G,app-lifecycle,app-hyp-impl	核心	SMMUv3 权威规范
 02-memory/2.3-smmu	ihi0062-smmuv2	IHI 0062 D.c	ARM SMMU Architecture Specification v2.0 (PDF mirror, 2016)	https://documentation-service.arm.com/static/5f900d34f86e16515cdc08fb	pdf	E	相关	对比 SMMUv3
-02-memory/2.3-smmu	109242-smmu-intro	109242	Learn the Architecture - SMMU Software Guide v1.0 (PDF mirror, 2023)	https://documentation-service.arm.com/static/64f59fb3bc48b0381ce07226	pdf	overview,E	背景	SMMUv3 入门(ARM 2023 改名为 Software Guide;与 109899 互补:109242 教程,109899 实务)
-02-memory/2.3-smmu	109899-smmu-sw	109899	SMMUv3 software guide	https://developer.arm.com/documentation/109899/latest/	html	overview,C,E,app-hyp-impl	核心	SMMU 配置实务
+02-memory/2.3-smmu	109242-smmu-intro	109242	Learn the Architecture - SMMU Software Guide v1.0 (PDF mirror, 2023)	https://documentation-service.arm.com/static/64f59fb3bc48b0381ce07226	pdf	overview,C,E,app-hyp-impl	核心	SMMU 软件指南(ARM 2023 合并原 SMMUv3 introduction 与 SMMU 配置实务)
 02-memory/2.3-smmu	101542-mmu700	101542	Arm CoreLink MMU-700 TRM r1p2 (PDF mirror, 2026)	https://documentation-service.arm.com/static/69dfb2d512ab715369d31c8b	pdf	overview,E	相关	SMMU IP 实现
 
 # 2.4 MPAM
@@ -121,6 +120,8 @@
 # 5.1 Neoverse CPU TRM
 05-server/5.1-neoverse-trm	102099-n2	102099	Neoverse N2 TRM	https://developer.arm.com/documentation/102099/latest/	html	overview,F	相关	服务器场景实现
 05-server/5.1-neoverse-trm	102375-v2	102375	Neoverse V2 TRM	https://developer.arm.com/documentation/102375/latest/	html	overview,F	相关	服务器场景实现
+05-server/5.1-neoverse-trm	109637-n3-opt	109637	Arm Neoverse N3 Core Software Optimization Guide r0p1 Issue 3.0 (PDF mirror, 2025)	https://documentation-service.arm.com/static/67be2073fdbd9d54ee93ff15	pdf	(无)	相关	N3 软件性能优化;不入虚拟化视图链路
+05-server/5.1-neoverse-trm	109898-v2-opt	109898	Arm Neoverse V2 Core Software Optimization Guide r0p2 Issue 3.0 (PDF mirror, 2022)	https://documentation-service.arm.com/static/668bc0a369e89f01e39c4668	pdf	(无)	相关	V2 软件性能优化;不入虚拟化视图链路
 
 # 5.2 互连 IP TRM
 05-server/5.2-interconnect-trm	102308-cmn700	102308	CoreLink CMN-700 TRM	https://developer.arm.com/documentation/102308/latest/	html	overview,F	相关	一致性互连
