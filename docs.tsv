@@ -131,4 +131,4 @@
 # ============================================================
 
 # 6.1 系统虚拟化总论
-06-virtualization/6.1-system-virtualization	102142-virt	102142	AArch64 virtualization	https://developer.arm.com/documentation/102142/latest/	html	overview,B,C,D,app-lifecycle,app-hyp-impl	核心	虚拟化主入口文档
+06-virtualization/6.1-system-virtualization	102142-virt	102142	Learn the architecture - AArch64 virtualization Guide (PDF mirror, 2025)	https://documentation-service.arm.com/static/68820916aa05c950b54a5c31	pdf	overview,B,C,D,app-lifecycle,app-hyp-impl	核心	虚拟化主入口文档
