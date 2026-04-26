@@ -5,7 +5,7 @@
 ## 设计原则
 
 **两层结构**:
-- **物理路径**(归档位置):每份文档只放一处。六大类、18 子类、47 份文档。
+- **物理路径**(归档位置):每份文档只放一处。六大类、17 子类、61 份文档。
 - **虚拟化视图**(逻辑引用):跨类组合的引用清单,每份文档可被多个视图引用。
 
 物理树 + 视图图,各司其职。
@@ -40,12 +40,12 @@ open arm-docs/views/overview.md
 
 ```
 arm-docs/
-├── 01-arm-architecture/        # 一、ARM 架构
+├── 01-arm-architecture/        # 一、ARM 架构(14 份)
 │   ├── 1.1-arm-arm/
 │   ├── 1.2-exception-model/
 │   ├── 1.3-system-architecture/
 │   └── 1.4-firmware-interfaces/
-├── 02-memory/                  # 二、内存(17 份)
+├── 02-memory/                  # 二、内存(16 份)
 │   ├── 2.1-memory-model/
 │   ├── 2.2-mmu/
 │   ├── 2.3-smmu/
@@ -55,10 +55,10 @@ arm-docs/
 │   ├── 3.2-gic-guides/
 │   ├── 3.3-generic-timer/
 │   └── 3.4-gic-ip-trm/
-├── 04-security/                # 四、安全(5 份)
+├── 04-security/                # 四、安全(9 份)
 │   ├── 4.1-cca-realm/
 │   └── 4.2-trustzone/
-├── 05-server/                  # 五、服务器(3 份)
+├── 05-server/                  # 五、服务器(11 份)
 │   ├── 5.1-neoverse-trm/
 │   └── 5.2-interconnect-trm/
 ├── 06-virtualization/          # 六、虚拟化(1 份)
@@ -124,9 +124,16 @@ category    id    doc_id    title    url    type    views    role    note
 
 `views` 列填该文档要进入的视图标签(逗号分隔):
 - `overview` — 系统虚拟化总览
-- `app-lifecycle` — VM 生命周期
-- `app-hyp-impl` — Hypervisor 实现
 - `A` 到 `G` — 七个方向视图
+- `app-lifecycle` / `app-hyp-impl` — 仅供阅读,不参与脚本生成
+- `(无)` — 显式标注:文档纯存档,与虚拟化无关,不进任何视图
+
+> 注:应用视图(`application-vm-lifecycle.md` / `application-hypervisor-impl.md`)
+> 由 `build-views.py` 内部 curated 列表生成,需要"阶段顺序"和"组件分组"
+> 这两类语义,纯 tag 表达不出来。`app-lifecycle` / `app-hyp-impl` 这两个
+> tag 留在 TSV 中只是给人读时的索引提示,改它们不会影响视图输出 ——
+> 要调整应用视图,直接改 `build-views.py` 里的 `VM_LIFECYCLE_STAGES` /
+> `HYPERVISOR_COMPONENTS`。
 
 然后重跑 `fetch-arm-docs.sh` 和 `build-views.py`。
 

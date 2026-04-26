@@ -22,7 +22,7 @@
 #category	id	doc_id	title	url	type	views	role	note
 
 # ============================================================
-# 一、ARM 架构(10 份)
+# 一、ARM 架构(14 份)
 # ============================================================
 
 # 1.1 Architecture Reference Manual
@@ -48,7 +48,7 @@
 01-arm-architecture/1.4-firmware-interfaces	102677-systemready	102677	SystemReady Band Integration and Testing Guide v5.0 Issue 03 (PDF mirror, 2026)	https://documentation-service.arm.com/static/69934e8f8faf2543f4a0eda6	pdf	(无)	相关	SystemReady 集成与测试实操;不入虚拟化视图链路
 
 # ============================================================
-# 二、内存(17 份)
+# 二、内存(16 份)
 # ============================================================
 
 # 2.1 内存模型(PE 数据访问语义)
@@ -98,7 +98,7 @@
 03-interrupt/3.4-gic-ip-trm	101516-gic700	101516	Arm CoreLink GIC-700 TRM r4p0 (PDF mirror, 2024)	https://documentation-service.arm.com/static/66b0adde882fec713ef48410	pdf	overview	相关	Neoverse 配套 GIC IP
 
 # ============================================================
-# 四、安全(5 份)
+# 四、安全(9 份)
 # ============================================================
 
 # 4.1 CCA / Realm
@@ -115,7 +115,7 @@
 04-security/4.2-trustzone	102418-trustzone	102418	Learn the architecture - TrustZone for AArch64 v1.2 (PDF mirror, 2024)	https://documentation-service.arm.com/static/6720fa78d037e313ed5ab346	pdf	overview,G	相关	对比 Realm 与 Secure(原 TSV 100935 占位,实际发布编号为 102418)
 
 # ============================================================
-# 五、服务器(3 份)
+# 五、服务器(11 份)
 # ============================================================
 
 # 5.1 Neoverse CPU TRM
