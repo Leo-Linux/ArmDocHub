@@ -102,6 +102,7 @@
 
 # 4.1 CCA / Realm
 04-security/4.1-cca-realm	den0125-cca-intro	DEN 0125	Learn the architecture - Introducing Arm CCA (PDF mirror, 2025)	https://documentation-service.arm.com/static/6812468479c4c17ad8037525	pdf	overview,G	背景	CCA 入门/机密计算原理
+04-security/4.1-cca-realm	den0096-cca-security	DEN 0096 A.a	Arm CCA Security Model 1.0 EAC (PDF mirror, 2021)	https://documentation-service.arm.com/static/610aaec33d73a34b640e333b	pdf	overview,G	核心	CCA 安全模型/威胁模型/信任链;证明原理基础
 04-security/4.1-cca-realm	den0126-rme-guide	DEN 0126	Learn the architecture - Realm Management Extension Guide v1.2 (PDF mirror, 2025)	https://documentation-service.arm.com/static/68d66667bd7cab51328bf6e3	pdf	overview,G	背景	RME 教程;DEN 0129 规范的伴生入门
 04-security/4.1-cca-realm	den0129-rme	DEN 0129 C.a	Arm Realm Management Extension RME System Architecture EAC (PDF mirror, 2025)	https://documentation-service.arm.com/static/69427c8d6f88316d78a854b3	pdf	overview,G,app-lifecycle	核心	CCA 系统架构
 04-security/4.1-cca-realm	ddi0615-rme	DDI 0615 A.a	Arm ARM Supplement RME for Armv9-A EAC (PDF mirror, 2021)	https://documentation-service.arm.com/static/60d32e78677cf7536a55bad7	pdf	overview,G	核心	RME 架构补充、GPT
