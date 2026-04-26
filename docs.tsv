@@ -29,22 +29,20 @@
 01-arm-architecture/1.1-arm-arm	ddi0487-detail	DDI 0487	Arm ARM for A-profile architecture	https://developer.arm.com/documentation/ddi0487/latest/	html	overview,A,B,C,D,E,F,G,app-lifecycle,app-hyp-impl	核心	唯一权威规范;视图 H 第 1 层
 01-arm-architecture/1.1-arm-arm	ddi0487-Mb-pdf	DDI 0487 M.b	Arm ARM A-profile Issue M.b (PDF mirror)	https://documentation-service.arm.com/static/69d7cbfc3fb3b839f93e5b1e	pdf	overview	核心	DDI 0487 的可下载 PDF 镜像
 01-arm-architecture/1.1-arm-arm	ddi0587-ras	DDI 0587 D.d	RAS System Architecture Specification (PDF mirror, 2022)	https://documentation-service.arm.com/static/63185614f72fad1903828eda	pdf	A	备查	备查;不入主链路
+01-arm-architecture/1.1-arm-arm	102404-arm-arch-intro	102404	Learn the architecture - Introducing the Arm architecture (PDF mirror, 2026)	https://documentation-service.arm.com/static/695e8d82d5db6f611870899f	pdf	overview,A	背景	ARM 架构入门;接替已下线的 DEN 0024A
 
-# 1.2 Programmer's Guide
-01-arm-architecture/1.2-programmers-guide	den0024a-pg	DEN 0024A	Cortex-A Series Programmer's Guide for ARMv8-A	https://developer.arm.com/documentation/den0024/a/	html	overview,A,B	背景	ARMv8 编程模型入门
+# 1.2 异常模型
+01-arm-architecture/1.2-exception-model	102412-exception	102412	Learn the architecture - AArch64 Exception Model (PDF mirror, 2025)	https://documentation-service.arm.com/static/67ac57fb091bfc3e0a9479cc	pdf	overview,A,B,D,app-lifecycle,app-hyp-impl	核心	陷入路径、vIRQ/vFIQ/vSError 注入
 
-# 1.3 异常模型
-01-arm-architecture/1.3-exception-model	102412-exception	102412	Learn the architecture - AArch64 Exception Model (PDF mirror, 2025)	https://documentation-service.arm.com/static/67ac57fb091bfc3e0a9479cc	pdf	overview,A,B,D,app-lifecycle,app-hyp-impl	核心	陷入路径、vIRQ/vFIQ/vSError 注入
+# 1.3 系统级架构
+01-arm-architecture/1.3-system-architecture	den0029-sbsa	DEN 0029	Server Base System Architecture (SBSA)	https://developer.arm.com/documentation/den0029/latest/	html	overview,E,F,G,app-lifecycle	相关	服务器虚拟化强制要求
+01-arm-architecture/1.3-system-architecture	den0094-bsa	DEN 0094	Base System Architecture (BSA)	https://developer.arm.com/documentation/den0094/latest/	html	overview,app-lifecycle	相关	通用平台基线
+01-arm-architecture/1.3-system-architecture	den0044-bbr	DEN 0044	Arm Base Boot Requirements (BBR)	https://developer.arm.com/documentation/den0044/latest/	html	overview,app-lifecycle	相关	VM firmware 接口
+01-arm-architecture/1.3-system-architecture	ebbr	EBBR	Embedded Base Boot Requirements	https://arm-software.github.io/ebbr/	html	overview	相关	嵌入式启动规范
 
-# 1.4 系统级架构
-01-arm-architecture/1.4-system-architecture	den0029-sbsa	DEN 0029	Server Base System Architecture (SBSA)	https://developer.arm.com/documentation/den0029/latest/	html	overview,E,F,G,app-lifecycle	相关	服务器虚拟化强制要求
-01-arm-architecture/1.4-system-architecture	den0094-bsa	DEN 0094	Base System Architecture (BSA)	https://developer.arm.com/documentation/den0094/latest/	html	overview,app-lifecycle	相关	通用平台基线
-01-arm-architecture/1.4-system-architecture	den0044-bbr	DEN 0044	Arm Base Boot Requirements (BBR)	https://developer.arm.com/documentation/den0044/latest/	html	overview,app-lifecycle	相关	VM firmware 接口
-01-arm-architecture/1.4-system-architecture	ebbr	EBBR	Embedded Base Boot Requirements	https://arm-software.github.io/ebbr/	html	overview	相关	嵌入式启动规范
-
-# 1.5 启动与固件接口
-01-arm-architecture/1.5-firmware-interfaces	den0022-psci	DEN 0022	Power State Coordination Interface (PSCI)	https://developer.arm.com/documentation/den0022/latest/	html	overview,B,app-lifecycle,app-hyp-impl	核心	VM CPU 启停/挂起/关机
-01-arm-architecture/1.5-firmware-interfaces	den0028-smccc	DEN 0028	SMC Calling Convention (SMCCC)	https://developer.arm.com/documentation/den0028/latest/	html	overview,B,G,app-lifecycle,app-hyp-impl	核心	SMC/HVC 调用约定
+# 1.4 启动与固件接口
+01-arm-architecture/1.4-firmware-interfaces	den0022-psci	DEN 0022	Power State Coordination Interface (PSCI)	https://developer.arm.com/documentation/den0022/latest/	html	overview,B,app-lifecycle,app-hyp-impl	核心	VM CPU 启停/挂起/关机
+01-arm-architecture/1.4-firmware-interfaces	den0028-smccc	DEN 0028	SMC Calling Convention (SMCCC)	https://developer.arm.com/documentation/den0028/latest/	html	overview,B,G,app-lifecycle,app-hyp-impl	核心	SMC/HVC 调用约定
 
 # ============================================================
 # 二、内存(17 份)
@@ -107,6 +105,7 @@
 # ============================================================
 
 # 4.1 CCA / Realm
+04-security/4.1-cca-realm	den0125-cca-intro	DEN 0125	Learn the architecture - Introducing Arm CCA (PDF mirror, 2025)	https://documentation-service.arm.com/static/6812468479c4c17ad8037525	pdf	overview,G	背景	CCA 入门/机密计算原理
 04-security/4.1-cca-realm	den0129-rme	DEN 0129	Realm Management Extension System Architecture	https://developer.arm.com/documentation/den0129/latest/	html	overview,G,app-lifecycle	核心	CCA 系统架构
 04-security/4.1-cca-realm	ddi0615-rme	DDI 0615	RME Architecture supplement (GPT)	https://developer.arm.com/documentation/ddi0615/latest/	html	overview,G	核心	RME 架构补充、GPT
 04-security/4.1-cca-realm	den0137-rmm	DEN 0137	Realm Management Monitor (RMM) Specification	https://developer.arm.com/documentation/den0137/latest/	html	overview,G,app-lifecycle,app-hyp-impl	核心	RMI/RSI 接口

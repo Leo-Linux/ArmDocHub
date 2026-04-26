@@ -40,12 +40,11 @@ open arm-docs/views/overview.md
 
 ```
 arm-docs/
-├── 01-arm-architecture/        # 一、ARM 架构(10 份)
+├── 01-arm-architecture/        # 一、ARM 架构
 │   ├── 1.1-arm-arm/
-│   ├── 1.2-programmers-guide/
-│   ├── 1.3-exception-model/
-│   ├── 1.4-system-architecture/
-│   └── 1.5-firmware-interfaces/
+│   ├── 1.2-exception-model/
+│   ├── 1.3-system-architecture/
+│   └── 1.4-firmware-interfaces/
 ├── 02-memory/                  # 二、内存(17 份)
 │   ├── 2.1-memory-model/
 │   ├── 2.2-mmu/

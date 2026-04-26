@@ -256,8 +256,8 @@ def build_overview(rows: list[dict], outdir: Path) -> None:
 
     def assign_layer(r: dict) -> int:
         cat = r["category"]
-        # 第 1 层:架构基础(1.1 ARM ARM、1.2 PG、1.3 Exception Model 中和系统虚拟化基础相关的)
-        # 第 2 层:系统虚拟化总论(102142 + 1.5 接口 + 1.4 系统级)
+        # 第 1 层:架构基础(1.1 ARM ARM、1.2 Exception Model 中和系统虚拟化基础相关的)
+        # 第 2 层:系统虚拟化总论(102142 + 1.4 接口 + 1.3 系统级)
         # 第 3 层:内存虚拟化(2.1 + 2.2)
         # 第 4 层:中断虚拟化(3.1 + 3.2 + 3.3)
         # 第 5 层:I/O 虚拟化(2.3 SMMU)
@@ -267,7 +267,7 @@ def build_overview(rows: list[dict], outdir: Path) -> None:
 
         if cat == "06-virtualization/6.1-system-virtualization":
             return 2
-        if cat.startswith("01-arm-architecture/1.5") or cat.startswith("01-arm-architecture/1.4"):
+        if cat.startswith("01-arm-architecture/1.4") or cat.startswith("01-arm-architecture/1.3"):
             return 2
         if cat.startswith("01-arm-architecture/"):
             return 1
