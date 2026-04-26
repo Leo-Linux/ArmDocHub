@@ -79,14 +79,12 @@
 
 # 3.1 GIC 架构规范
 03-interrupt/3.1-gic-architecture	ihi0069-gicv3v4	IHI 0069 H.b	Arm GIC Architecture Specification, GICv3 and GICv4 (PDF mirror, 2024)	https://documentation-service.arm.com/static/67eaa4d098aa3c3b6eea7351	pdf	overview,D,G,app-hyp-impl	核心	GIC 权威规范
-03-interrupt/3.1-gic-architecture	aes0070-gicv5	AES 0070	Arm GICv5 Architecture Spec (2025 beta)	https://developer.arm.com/documentation/aes0070/latest/	html	overview,D,G	相关	GICv5 零陷入虚拟化
-03-interrupt/3.1-gic-architecture	aes0070-pdf	AES 0070 beta0	Arm GICv5 Architecture Spec beta0 (PDF)	https://documentation-service.arm.com/static/67ea9f604191d739c8e9f9bb	pdf	overview	相关	GICv5 PDF 直链
+03-interrupt/3.1-gic-architecture	aes0070-gicv5	AES 0070 EAC	Arm GICv5 Architecture Specification 00eac0 (PDF mirror, 2025)	https://documentation-service.arm.com/static/68c81d308a337a2bc6645fa6	pdf	overview,D,G	相关	GICv5 零陷入虚拟化(EAC 工程审定版)
 
 # 3.2 GIC 教程与软件指南
-03-interrupt/3.2-gic-guides	198123-gicv3v4-overview	198123	GICv3/v4 Overview	https://developer.arm.com/documentation/198123/latest/	html	overview,D	背景	物理中断教程
-03-interrupt/3.2-gic-guides	198123-pdf	198123 v3.0	GICv3/v4 Overview v3.0 (PDF)	https://documentation-service.arm.com/static/68077c770887e84c5ae973da	pdf	overview	背景	198123 PDF 直链
+03-interrupt/3.2-gic-guides	198123-gicv3v4-overview	198123 v3.0	Learn the architecture - GICv3/v4 Overview v3.0 (PDF mirror, 2025)	https://documentation-service.arm.com/static/68077c770887e84c5ae973da	pdf	overview,D	背景	物理中断教程
 03-interrupt/3.2-gic-guides	198134-gicv3v4-virt	198134	Learn the architecture - GICv3/v4 Virtualization v1.2 (PDF mirror, 2024)	https://documentation-service.arm.com/static/6603fa5daec7154a17edee5f	pdf	overview,D,app-lifecycle,app-hyp-impl	核心	中断虚拟化主参考(ARM 内部 doc id 107627)
-03-interrupt/3.2-gic-guides	109344-lpi-its	109344	LPIs and the ITS	https://developer.arm.com/documentation/109344/latest/	html	overview,D,E,G,app-hyp-impl	核心	vLPI/vSGI 直接注入
+03-interrupt/3.2-gic-guides	102923-lpi	102923	Learn the architecture - GICv3/v4 LPIs v1.0 (PDF mirror, 2024)	https://documentation-service.arm.com/static/65ba2901c2052a35156cc629	pdf	overview,D,E,G,app-hyp-impl	核心	LPI/ITS 实现(原 TSV 109344 占位未发布,vSGI 直接注入见 198134)
 03-interrupt/3.2-gic-guides	111471-gicv5-overview	111471	Learn the Architecture - GICv5 Overview v1.0 (PDF mirror, 2026)	https://documentation-service.arm.com/static/69d6192a3fb3b839f93e35b9	pdf	overview,D	相关	GICv5 入门(2026-04 与 aes0070 GICv5 spec 同步发布,接替 110491)
 03-interrupt/3.2-gic-guides	dai0492-sw	DAI 0492 B	GICv3 and GICv4 Software Overview B (PDF mirror)	https://documentation-service.arm.com/static/5f1068720daa596235e7f6ef	pdf	overview,D,app-hyp-impl	相关	GIC 软件实现参考
 

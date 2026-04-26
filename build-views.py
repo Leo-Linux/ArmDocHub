@@ -118,7 +118,7 @@ HYPERVISOR_COMPONENTS = [
     },
     {
         "title": "4. vGIC 实现",
-        "doc_ids": ["ihi0069-gicv3v4", "198134-gicv3v4-virt", "109344-lpi-its", "dai0492-sw"],
+        "doc_ids": ["ihi0069-gicv3v4", "198134-gicv3v4-virt", "102923-lpi", "dai0492-sw"],
         "code": "arch/arm64/kvm/vgic/",
     },
     {
@@ -133,7 +133,7 @@ HYPERVISOR_COMPONENTS = [
     },
     {
         "title": "7. 设备直通(SMMU + ITS)",
-        "doc_ids": ["ihi0070-smmuv3", "109899-smmu-sw", "109344-lpi-its"],
+        "doc_ids": ["ihi0070-smmuv3", "109242-smmu-intro", "102923-lpi"],
         "code": "drivers/iommu/arm/arm-smmu-v3/",
     },
     {
