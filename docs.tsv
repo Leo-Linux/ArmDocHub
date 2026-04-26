@@ -60,7 +60,7 @@
 02-memory/2.2-mmu	102416-mmu-examples	102416	Learn the architecture - AArch64 memory management examples v2.1 (PDF mirror, 2026)	https://documentation-service.arm.com/static/69b17ab0e79f9a1d642aadad	pdf	overview,C,app-hyp-impl	核心	汇编示例
 
 # 2.3 SMMU(IOMMU)
-02-memory/2.3-smmu	ihi0070-smmuv3	IHI 0070	Arm SMMUv3 Architecture Spec	https://developer.arm.com/documentation/ihi0070/latest/	html	overview,C,E,G,app-lifecycle,app-hyp-impl	核心	SMMUv3 权威规范
+02-memory/2.3-smmu	ihi0070-smmuv3	IHI 0070 H.a	Arm SMMUv3 Architecture Specification (PDF mirror, 2026)	https://documentation-service.arm.com/static/69ae9767e79f9a1d642aab2d	pdf	overview,C,E,G,app-lifecycle,app-hyp-impl	核心	SMMUv3 权威规范
 02-memory/2.3-smmu	ihi0062-smmuv2	IHI 0062	Arm SMMUv2 Architecture Spec	https://developer.arm.com/documentation/ihi0062/latest/	html	E	相关	对比 SMMUv3
 02-memory/2.3-smmu	109242-smmu-intro	109242	Learn the architecture: SMMUv3 introduction	https://developer.arm.com/documentation/109242/latest/	html	overview,E	背景	SMMUv3 教程
 02-memory/2.3-smmu	109899-smmu-sw	109899	SMMUv3 software guide	https://developer.arm.com/documentation/109899/latest/	html	overview,C,E,app-hyp-impl	核心	SMMU 配置实务
