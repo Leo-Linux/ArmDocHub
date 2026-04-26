@@ -37,7 +37,7 @@
 
 # 1.3 系统级架构
 01-arm-architecture/1.3-system-architecture	den0029-sbsa	DEN 0029	Server Base System Architecture SBSA (PDF mirror, 2025)	https://documentation-service.arm.com/static/68c934bd8a337a2bc66460b3	pdf	overview,E,F,G,app-lifecycle	相关	服务器虚拟化强制要求
-01-arm-architecture/1.3-system-architecture	den0094-bsa	DEN 0094	Arm Base System Architecture BSA (PDF mirror, 2025)	https://documentation-service.arm.com/static/6870cb719f5181111629af04	pdf	overview,app-lifecycle	相关	通用平台基线
+01-arm-architecture/1.3-system-architecture	den0094-bsa	DEN 0094	Arm Base System Architecture BSA (PDF mirror, 2025)	https://documentation-service.arm.com/static/6870cb719f5181111629af04	pdf	overview,E,app-lifecycle	相关	通用平台基线
 01-arm-architecture/1.3-system-architecture	den0044-bbr	DEN 0044	Arm Base Boot Requirements BBR Issue I (PDF mirror, 2025)	https://documentation-service.arm.com/static/68512137d12d1a1df64f239d	pdf	overview,app-lifecycle	相关	VM firmware 接口
 01-arm-architecture/1.3-system-architecture	den0107-bbsr	DEN 0107	Base Boot Security Requirements BBSR Issue 1.4 (PDF mirror, 2025)	https://documentation-service.arm.com/static/68775ff446dc1e49e34ba2b0	pdf	overview,app-lifecycle,G	相关	安全启动;配 BBR、CCA Measured Boot 链路引用
 
