@@ -95,7 +95,7 @@
 
 # 3.4 GIC IP TRM
 03-interrupt/3.4-gic-ip-trm	101206-gic600ae	101206	Arm CoreLink GIC-600AE TRM r0p3 (PDF mirror, 2022)	https://documentation-service.arm.com/static/6337038fda191e7fe057d9d3	pdf	(无)	相关	车规/Cyber-physical
-03-interrupt/3.4-gic-ip-trm	101516-gic700	101516	Arm CoreLink GIC-700 TRM r4p0 (PDF mirror, 2024)	https://documentation-service.arm.com/static/66b0adde882fec713ef48410	pdf	overview	相关	Neoverse 配套 GIC IP
+03-interrupt/3.4-gic-ip-trm	101516-gic700	101516	Arm CoreLink GIC-700 TRM r4p0 (PDF mirror, 2024)	https://documentation-service.arm.com/static/66b0adde882fec713ef48410	pdf	overview,D	相关	Neoverse 配套 GIC IP
 
 # ============================================================
 # 四、安全(9 份)
