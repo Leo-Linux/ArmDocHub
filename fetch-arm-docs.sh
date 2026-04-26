@@ -25,9 +25,10 @@ MANIFEST="$ROOT/manifest.csv"
 MISSING="$ROOT/MISSING.md"
 LOGFILE="$ROOT/download.log"
 
-if [[ ! -f "$MANIFEST" ]]; then
-    echo "category,id,doc_id,title,url,type,views,role,status,bytes,sha256,fetched_at" > "$MANIFEST"
-fi
+# manifest 与 download.log 每次运行重写,避免 append 累积旧条目。
+# (MISSING.md 已经是 `> "$MISSING"` 重写,无需另外处理。)
+echo "category,id,doc_id,title,url,type,views,role,status,bytes,sha256,fetched_at" > "$MANIFEST"
+: > "$LOGFILE"
 
 {
     echo "# 需要手动下载的文档"
@@ -222,7 +223,9 @@ done < "$TSV"
     echo "- 失败: $fail"
     echo "- 仅 HTML 详情(需手动): $missing"
     echo ""
-    echo "## 物理路径结构(六大类、18 子类)"
+    main_count=$(find "$ROOT" -mindepth 1 -maxdepth 1 -type d ! -name 'views' | wc -l)
+    sub_count=$(find "$ROOT" -mindepth 2 -maxdepth 2 -type d ! -path "*/views/*" | wc -l)
+    echo "## 物理路径结构(${main_count} 大类、${sub_count} 子类)"
     echo ""
     echo "\`\`\`"
     if command -v tree >/dev/null 2>&1; then
