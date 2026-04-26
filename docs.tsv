@@ -28,7 +28,7 @@
 # 1.1 Architecture Reference Manual
 01-arm-architecture/1.1-arm-arm	ddi0487-detail	DDI 0487	Arm ARM for A-profile architecture	https://developer.arm.com/documentation/ddi0487/latest/	html	overview,A,B,C,D,E,F,G,app-lifecycle,app-hyp-impl	核心	唯一权威规范;视图 H 第 1 层
 01-arm-architecture/1.1-arm-arm	ddi0487-Mb-pdf	DDI 0487 M.b	Arm ARM A-profile Issue M.b (PDF mirror)	https://documentation-service.arm.com/static/69d7cbfc3fb3b839f93e5b1e	pdf	overview	核心	DDI 0487 的可下载 PDF 镜像
-01-arm-architecture/1.1-arm-arm	ddi0587-ras	DDI 0587	RAS System Architecture Specification	https://developer.arm.com/documentation/ddi0587/latest/	html	A	备查	备查;不入主链路
+01-arm-architecture/1.1-arm-arm	ddi0587-ras	DDI 0587 D.d	RAS System Architecture Specification (PDF mirror, 2022)	https://documentation-service.arm.com/static/63185614f72fad1903828eda	pdf	A	备查	备查;不入主链路
 
 # 1.2 Programmer's Guide
 01-arm-architecture/1.2-programmers-guide	den0024a-pg	DEN 0024A	Cortex-A Series Programmer's Guide for ARMv8-A	https://developer.arm.com/documentation/den0024/a/	html	overview,A,B	背景	ARMv8 编程模型入门
