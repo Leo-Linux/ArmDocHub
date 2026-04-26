@@ -43,6 +43,7 @@
 # 1.4 启动与固件接口
 01-arm-architecture/1.4-firmware-interfaces	den0022-psci	DEN 0022 F.b	Arm Power State Coordination Interface PSCI v1.3 (PDF mirror, 2024)	https://documentation-service.arm.com/static/6703a8b8d7e4b739d817e10d	pdf	overview,B,app-lifecycle,app-hyp-impl	核心	VM CPU 启停/挂起/关机
 01-arm-architecture/1.4-firmware-interfaces	den0028-smccc	DEN 0028 H BET0	SMC Calling Convention SMCCC v1.7 (PDF mirror, 2026)	https://documentation-service.arm.com/static/69e76af112ab715369d352e6	pdf	overview,B,G,app-lifecycle,app-hyp-impl	核心	SMC/HVC 调用约定
+01-arm-architecture/1.4-firmware-interfaces	den0077-ffa	DEN 0077 A v1.3	Arm Firmware Framework for A-profile FF-A (PDF mirror, 2025)	https://documentation-service.arm.com/static/6876738e9f5181111629b363	pdf	overview,B,G,app-hyp-impl	相关	Realm/Secure Partition 与 hypervisor 消息传递
 01-arm-architecture/1.4-firmware-interfaces	102677-systemready	102677	SystemReady Band Integration and Testing Guide v5.0 Issue 03 (PDF mirror, 2026)	https://documentation-service.arm.com/static/69934e8f8faf2543f4a0eda6	pdf	(无)	相关	SystemReady 集成与测试实操;不入虚拟化视图链路
 
 # ============================================================
