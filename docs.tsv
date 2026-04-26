@@ -78,7 +78,7 @@
 # ============================================================
 
 # 3.1 GIC 架构规范
-03-interrupt/3.1-gic-architecture	ihi0069-gicv3v4	IHI 0069	Arm GIC Architecture Spec, GICv3+GICv4	https://developer.arm.com/documentation/ihi0069/latest/	html	overview,D,G,app-hyp-impl	核心	GIC 权威规范
+03-interrupt/3.1-gic-architecture	ihi0069-gicv3v4	IHI 0069 H.b	Arm GIC Architecture Specification, GICv3 and GICv4 (PDF mirror, 2024)	https://documentation-service.arm.com/static/67eaa4d098aa3c3b6eea7351	pdf	overview,D,G,app-hyp-impl	核心	GIC 权威规范
 03-interrupt/3.1-gic-architecture	aes0070-gicv5	AES 0070	Arm GICv5 Architecture Spec (2025 beta)	https://developer.arm.com/documentation/aes0070/latest/	html	overview,D,G	相关	GICv5 零陷入虚拟化
 03-interrupt/3.1-gic-architecture	aes0070-pdf	AES 0070 beta0	Arm GICv5 Architecture Spec beta0 (PDF)	https://documentation-service.arm.com/static/67ea9f604191d739c8e9f9bb	pdf	overview	相关	GICv5 PDF 直链
 
