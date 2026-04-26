@@ -85,12 +85,10 @@
 # 3.2 GIC 教程与软件指南
 03-interrupt/3.2-gic-guides	198123-gicv3v4-overview	198123	GICv3/v4 Overview	https://developer.arm.com/documentation/198123/latest/	html	overview,D	背景	物理中断教程
 03-interrupt/3.2-gic-guides	198123-pdf	198123 v3.0	GICv3/v4 Overview v3.0 (PDF)	https://documentation-service.arm.com/static/68077c770887e84c5ae973da	pdf	overview	背景	198123 PDF 直链
-03-interrupt/3.2-gic-guides	198134-gicv3v4-virt	198134	GICv3/v4 Virtualization	https://developer.arm.com/documentation/198134/latest/	html	overview,D,app-lifecycle,app-hyp-impl	核心	中断虚拟化主参考
-03-interrupt/3.2-gic-guides	198134-pdf	198134 v2022	GICv3/v4 Virtualization 2022 (PDF)	https://documentation-service.arm.com/static/65b7c197c2052a35156cc31a	pdf	overview	核心	198134 PDF 直链
+03-interrupt/3.2-gic-guides	198134-gicv3v4-virt	198134	Learn the architecture - GICv3/v4 Virtualization v1.2 (PDF mirror, 2024)	https://documentation-service.arm.com/static/6603fa5daec7154a17edee5f	pdf	overview,D,app-lifecycle,app-hyp-impl	核心	中断虚拟化主参考(ARM 内部 doc id 107627)
 03-interrupt/3.2-gic-guides	109344-lpi-its	109344	LPIs and the ITS	https://developer.arm.com/documentation/109344/latest/	html	overview,D,E,G,app-hyp-impl	核心	vLPI/vSGI 直接注入
-03-interrupt/3.2-gic-guides	110491-gicv5-intro	110491	GICv5 introduction	https://developer.arm.com/documentation/110491/latest/	html	overview,D	相关	GICv5 入门
-03-interrupt/3.2-gic-guides	dai0492-sw	DAI 0492	GICv3 and GICv4 Software Overview	https://developer.arm.com/documentation/dai0492/latest/	html	overview,D,app-hyp-impl	相关	软件实现参考
-03-interrupt/3.2-gic-guides	dai0492-pdf	DAI 0492 B	GIC Software Overview B (PDF mirror)	https://documentation-service.arm.com/static/5f1068720daa596235e7f6ef	pdf	overview	相关	DAI 0492 PDF 镜像
+03-interrupt/3.2-gic-guides	111471-gicv5-overview	111471	Learn the Architecture - GICv5 Overview v1.0 (PDF mirror, 2026)	https://documentation-service.arm.com/static/69d6192a3fb3b839f93e35b9	pdf	overview,D	相关	GICv5 入门(2026-04 与 aes0070 GICv5 spec 同步发布,接替 110491)
+03-interrupt/3.2-gic-guides	dai0492-sw	DAI 0492 B	GICv3 and GICv4 Software Overview B (PDF mirror)	https://documentation-service.arm.com/static/5f1068720daa596235e7f6ef	pdf	overview,D,app-hyp-impl	相关	GIC 软件实现参考
 
 # 3.3 Generic Timer
 03-interrupt/3.3-generic-timer	102379-timer	102379	Learn the architecture - Generic Timer (PDF mirror, 2024)	https://documentation-service.arm.com/static/66c4754f32f35b31ceb317ff	pdf	overview,D,app-hyp-impl	相关	timer 中断虚拟化
