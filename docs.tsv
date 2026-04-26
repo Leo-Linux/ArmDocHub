@@ -30,6 +30,7 @@
 01-arm-architecture/1.1-arm-arm	ddi0487-Mb-pdf	DDI 0487 M.b	Arm ARM A-profile Issue M.b (PDF mirror)	https://documentation-service.arm.com/static/69d7cbfc3fb3b839f93e5b1e	pdf	overview	核心	DDI 0487 的可下载 PDF 镜像
 01-arm-architecture/1.1-arm-arm	ddi0587-ras	DDI 0587 D.d	RAS System Architecture Specification (PDF mirror, 2022)	https://documentation-service.arm.com/static/63185614f72fad1903828eda	pdf	A	备查	备查;不入主链路
 01-arm-architecture/1.1-arm-arm	102404-arm-arch-intro	102404	Learn the architecture - Introducing the Arm architecture (PDF mirror, 2026)	https://documentation-service.arm.com/static/695e8d82d5db6f611870899f	pdf	overview,A	背景	ARM 架构入门;接替已下线的 DEN 0024A
+01-arm-architecture/1.1-arm-arm	102340-sve2-intro	102340	Learn the architecture - Introducing SVE2 v1.0 (PDF mirror, 2024)	https://documentation-service.arm.com/static/660e6e38aec7154a17ee1f25	pdf	B,app-hyp-impl	背景	SVE/SVE2 扩展概览;hypervisor vCPU 切换需保存/恢复 SVE 状态
 
 # 1.2 异常模型
 01-arm-architecture/1.2-exception-model	102412-exception	102412	Learn the architecture - AArch64 Exception Model (PDF mirror, 2025)	https://documentation-service.arm.com/static/67ac57fb091bfc3e0a9479cc	pdf	overview,A,B,D,app-lifecycle,app-hyp-impl	核心	陷入路径、vIRQ/vFIQ/vSError 注入
