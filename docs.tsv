@@ -101,26 +101,34 @@
 
 # 4.1 CCA / Realm
 04-security/4.1-cca-realm	den0125-cca-intro	DEN 0125	Learn the architecture - Introducing Arm CCA (PDF mirror, 2025)	https://documentation-service.arm.com/static/6812468479c4c17ad8037525	pdf	overview,G	背景	CCA 入门/机密计算原理
-04-security/4.1-cca-realm	den0129-rme	DEN 0129	Realm Management Extension System Architecture	https://developer.arm.com/documentation/den0129/latest/	html	overview,G,app-lifecycle	核心	CCA 系统架构
-04-security/4.1-cca-realm	ddi0615-rme	DDI 0615	RME Architecture supplement (GPT)	https://developer.arm.com/documentation/ddi0615/latest/	html	overview,G	核心	RME 架构补充、GPT
-04-security/4.1-cca-realm	den0137-rmm	DEN 0137	Realm Management Monitor (RMM) Specification	https://developer.arm.com/documentation/den0137/latest/	html	overview,G,app-lifecycle,app-hyp-impl	核心	RMI/RSI 接口
-04-security/4.1-cca-realm	102842-cca-sw	102842	Arm CCA Software Stack guide	https://developer.arm.com/documentation/102842/latest/	html	overview,G,app-hyp-impl	核心	CCA 软件栈
+04-security/4.1-cca-realm	den0126-rme-guide	DEN 0126	Learn the architecture - Realm Management Extension Guide v1.2 (PDF mirror, 2025)	https://documentation-service.arm.com/static/68d66667bd7cab51328bf6e3	pdf	overview,G	背景	RME 教程;DEN 0129 规范的伴生入门
+04-security/4.1-cca-realm	den0129-rme	DEN 0129 C.a	Arm Realm Management Extension RME System Architecture EAC (PDF mirror, 2025)	https://documentation-service.arm.com/static/69427c8d6f88316d78a854b3	pdf	overview,G,app-lifecycle	核心	CCA 系统架构
+04-security/4.1-cca-realm	ddi0615-rme	DDI 0615 A.a	Arm ARM Supplement RME for Armv9-A EAC (PDF mirror, 2021)	https://documentation-service.arm.com/static/60d32e78677cf7536a55bad7	pdf	overview,G	核心	RME 架构补充、GPT
+04-security/4.1-cca-realm	den0137-rmm	DEN 0137 v2.0-bet1	Arm Realm Management Monitor RMM Specification (PDF mirror, 2026)	https://documentation-service.arm.com/static/69cb945ac1586b7c59b1c00c	pdf	overview,G,app-lifecycle,app-hyp-impl	核心	RMI/RSI 接口
+04-security/4.1-cca-realm	den0127-cca-sw	DEN 0127	Learn the architecture - Arm CCA software stack v3.0 (PDF mirror, 2025)	https://documentation-service.arm.com/static/6863a14046dc1e49e34b7b70	pdf	overview,G,app-hyp-impl	核心	CCA 软件栈(原 TSV 102842 占位,实际发布编号 DEN 0127)
+04-security/4.1-cca-realm	109839-rme-mec-flows	109839	Realm Management Extension and Memory Encryption Contexts example software flows v1.1 (PDF mirror, 2024)	https://documentation-service.arm.com/static/669f7b1ead34ef5a3c8dec87	pdf	overview,G,app-hyp-impl	背景	RME + MEC 软件流程示例;hypervisor 实现参考
 
 # 4.2 TrustZone
-04-security/4.2-trustzone	100935-trustzone	100935	TrustZone for AArch64	https://developer.arm.com/documentation/100935/latest/	html	overview,G	相关	对比 Realm 与 Secure
+04-security/4.2-trustzone	102418-trustzone	102418	Learn the architecture - TrustZone for AArch64 v1.2 (PDF mirror, 2024)	https://documentation-service.arm.com/static/6720fa78d037e313ed5ab346	pdf	overview,G	相关	对比 Realm 与 Secure(原 TSV 100935 占位,实际发布编号为 102418)
 
 # ============================================================
 # 五、服务器(3 份)
 # ============================================================
 
 # 5.1 Neoverse CPU TRM
-05-server/5.1-neoverse-trm	102099-n2	102099	Neoverse N2 TRM	https://developer.arm.com/documentation/102099/latest/	html	overview,F	相关	服务器场景实现
-05-server/5.1-neoverse-trm	102375-v2	102375	Neoverse V2 TRM	https://developer.arm.com/documentation/102375/latest/	html	overview,F	相关	服务器场景实现
+05-server/5.1-neoverse-trm	102099-n2	102099	Arm Neoverse N2 Core TRM r0p3 (PDF mirror, 2022)	https://documentation-service.arm.com/static/639073d12b0dd145f8030841	pdf	overview,F	相关	服务器场景实现
+05-server/5.1-neoverse-trm	102337-n2-refdesign	102337	Arm Neoverse N2 Reference Design Technical Overview (PDF mirror, 2022)	https://documentation-service.arm.com/static/61e8008e2183326f21773543	pdf	overview,F	相关	N2 平台级集成示例(核+CMN+GIC+SMMU)
+05-server/5.1-neoverse-trm	107997-n3	107997	Arm Neoverse N3 Core TRM r0p1 (PDF mirror, 2025)	https://documentation-service.arm.com/static/67be1125ce2747241fce9a61	pdf	overview,F	相关	服务器场景实现
+05-server/5.1-neoverse-trm	102375-v2	102375	Arm Neoverse V2 Core TRM r0p2 (PDF mirror, 2022)	https://documentation-service.arm.com/static/641a844b8df5201251bf37d0	pdf	overview,F	相关	服务器场景实现
+05-server/5.1-neoverse-trm	102759-v2-refdesign	102759	Arm Neoverse V2 Reference Design Technical Overview (PDF mirror, 2022)	https://documentation-service.arm.com/static/632b1f40e68c6809a6b4162b	pdf	overview,F	相关	V2 平台级集成示例(核+CMN+GIC+SMMU)
+05-server/5.1-neoverse-trm	107734-v3	107734	Arm Neoverse V3 Core TRM r0p2 (PDF mirror, 2025)	https://documentation-service.arm.com/static/68a78f74e7f7ce6150e8ad2b	pdf	overview,F	相关	服务器场景实现(V2 后继)
 05-server/5.1-neoverse-trm	109637-n3-opt	109637	Arm Neoverse N3 Core Software Optimization Guide r0p1 Issue 3.0 (PDF mirror, 2025)	https://documentation-service.arm.com/static/67be2073fdbd9d54ee93ff15	pdf	(无)	相关	N3 软件性能优化;不入虚拟化视图链路
 05-server/5.1-neoverse-trm	109898-v2-opt	109898	Arm Neoverse V2 Core Software Optimization Guide r0p2 Issue 3.0 (PDF mirror, 2022)	https://documentation-service.arm.com/static/668bc0a369e89f01e39c4668	pdf	(无)	相关	V2 软件性能优化;不入虚拟化视图链路
+05-server/5.1-neoverse-trm	109914-n2-opt	109914	Arm Neoverse N2 Core Software Optimization Guide r0p3 Issue 5.0 (PDF mirror, 2022)	https://documentation-service.arm.com/static/66880d189082ad344b14c342	pdf	(无)	相关	N2 软件性能优化;不入虚拟化视图链路
+05-server/5.1-neoverse-trm	110079-v3-opt	110079	Arm Neoverse V3 Core Software Optimization Guide r0p2 Issue 4.0 (PDF mirror, 2025)	https://documentation-service.arm.com/static/69c3f3c7351d0c3476bddc36	pdf	(无)	相关	V3 软件性能优化;不入虚拟化视图链路
 
 # 5.2 互连 IP TRM
-05-server/5.2-interconnect-trm	102308-cmn700	102308	CoreLink CMN-700 TRM	https://developer.arm.com/documentation/102308/latest/	html	overview,F	相关	一致性互连
+05-server/5.2-interconnect-trm	102308-cmn700	102308	Arm Neoverse CMN-700 Coherent Mesh Network TRM r3p2 (PDF mirror, 2023)	https://documentation-service.arm.com/static/64c0004adf6cd61d528c8a4f	pdf	overview,F	相关	一致性互连
 
 # ============================================================
 # 六、虚拟化(1 份)

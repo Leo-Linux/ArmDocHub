@@ -138,7 +138,7 @@ HYPERVISOR_COMPONENTS = [
     },
     {
         "title": "8. CCA / Realm 支持",
-        "doc_ids": ["den0129-rme", "den0137-rmm", "102842-cca-sw"],
+        "doc_ids": ["den0129-rme", "den0137-rmm", "den0127-cca-sw"],
         "code": "arch/arm64/kvm/rme.c (2024 后逐步合入)",
     },
 ]
