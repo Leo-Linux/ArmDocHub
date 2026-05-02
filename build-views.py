@@ -75,7 +75,7 @@ OVERVIEW_LAYERS = [
 VM_LIFECYCLE_STAGES = [
     {
         "title": "阶段 1:Hypervisor 启动 + 进入 EL2",
-        "doc_ids": ["ddi0487-detail", "den0028-smccc", "102142-virt"],
+        "doc_ids": ["ddi0487-Mb-pdf", "den0028-smccc", "102142-virt"],
         "note": "从 EL3 firmware 切换到 EL2,初始化虚拟化控制寄存器。",
     },
     {
@@ -103,12 +103,12 @@ VM_LIFECYCLE_STAGES = [
 HYPERVISOR_COMPONENTS = [
     {
         "title": "1. 陷入与异常处理",
-        "doc_ids": ["ddi0487-detail", "102412-exception", "102142-virt"],
+        "doc_ids": ["ddi0487-Mb-pdf", "102412-exception", "102142-virt"],
         "code": "arch/arm64/kvm/hyp/、arch/arm64/kvm/handle_exit.c",
     },
     {
         "title": "2. vCPU 状态切换(world switch)",
-        "doc_ids": ["102142-virt", "ddi0487-detail"],
+        "doc_ids": ["102142-virt", "ddi0487-Mb-pdf"],
         "code": "arch/arm64/kvm/hyp/{vhe,nvhe}/",
     },
     {
